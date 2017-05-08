@@ -9,6 +9,9 @@ html, body {
     font-family: 'Lato', sans-serif;
     color: black;
 }
+
+/*JUMBOTRON BANNER*/
+
 .logo {
     position: absolute;
     top: 0;
@@ -34,7 +37,7 @@ html, body {
     margin-top: 4%;
     width: 31%;
 }
-@media (max-width: 767px ) {
+@media (max-width: 1000px ) {
     .banner-collumn {
         margin-top: 30%;
         width: 100%;
@@ -49,6 +52,10 @@ html, body {
     font-size: 1em;
     font-weight: 300;
 }
+
+
+
+/*FLOATED FORM*/
 form {
     position: absolute;
     width: 100%;
@@ -130,12 +137,15 @@ form label {
     box-shadow:1px 1px 3px gray;
     border: 1px solid white;
 }
+
+
+/*MAIN TEXT*/
 .main-text {
     width: 46%;
-    margin-left: 2%;
-
+    margin: 2% 0 3% 1%;
+    
 }
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     .main-text {
         width: 95%;
     }
@@ -170,8 +180,87 @@ form label {
 .argument-container-big b {
   font-weight: 900;    
 }
+.lorem-centered {
+  color:#484848;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-style: italic;
+  margin: 2%;
+}
+
+/*GRAY STEPS BANNER*/
+
+.steps-container {
+    margin: 0 auto;
+    padding: 0 10% 0 19%;
+    text-align: center;
+    background-color:#ebebeb;
+    width:100%;
+    box-sizing: border-box;
+    padding-top: 2%;
+
+}
+.steps-container h2 {
+    width: 100%;
+    margin-left: -8%;
+    
+}
+
+.step {
+    text-align:left;  
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+@media (max-width:1000px) {
+    .step {
+    width:100%;
+    margin-left:10px;
+    }
+}
+.step-name {
+   font-size: 1.4em;
+   font-weight: 900;
+   color: #c1261b;
+   text-transform: uppercase;
+}
+
+
+.step img {
+    position: absolute;
+    right: 103%;
+}
+
+
+/*FOOTER*/
+footer {
+    padding-top: 3%;
+}
+
+.footer-tittle {
+    color: #9f9f9f !important;
+    font-weight: 900;
+    font-size: 1.1em;
+    margin: 5%;
+    line-height: 6em;
+}
+.copyright {
+    color: #777777;
+    font-size: 0.9em;
+    line-height: 3em;
+}
 .clearfix:after {
   content:'';
   display:table;
   clear:both;
   }
+
+.centered-container {
+  text-align: center;
+}
+
+.logo-container img {
+    margin: 0 1% 1% 1%;
+} 
