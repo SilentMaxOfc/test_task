@@ -62,20 +62,25 @@ form {
 }
 @media (max-width: 1000px){
     form {
-        position: inherit;        
+       position:inherit; 
     }
 }
 .form-main-container {
     width: 30%;
-    position: relative;
-    float: right;
-    margin-right: 18%;
-    margin-top: 6%;
-    top:-20em;
+    position: absolute;
+    right: 18%;
+    top:-52em;
     padding: 2%;
     background-color:#ebebeb;
     border-radius: 1%;
     box-shadow:0 0 10px gray;
+}
+@media (max-width: 1000px){
+    .form-main-container {
+        position:relative; 
+        top: 0;
+        right: 0;
+    }
 }
 @media (max-width: 1000px){
     .form-main-container {
@@ -85,7 +90,6 @@ form {
         margin-top: 0;
         margin-left: 10%;
         float:left;
-        
     }
 }
 .paper {
@@ -140,6 +144,21 @@ form label {
 
 
 /*MAIN TEXT*/
+/*
+@media (max-width 1000px){
+     main {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column-reverse;
+    }
+}
+.main-text {
+    width: 46%;
+    margin: 2% 0 3% 1%;
+    
+}
+*/
+
 .main-text {
     width: 46%;
     margin: 2% 0 3% 1%;
@@ -147,7 +166,7 @@ form label {
 }
 @media (max-width: 1000px) {
     .main-text {
-        width: 95%;
+        width: 95%; 
     }
 }
 .argument-container {
@@ -156,8 +175,9 @@ form label {
     vertical-align: top;
 }
 .argument-container-sm {
-   width: 42%;
-    padding-left: 10px;
+   width: 43%;
+   margin-left: 30px;
+   position: relative;
 }
 
 @media (max-width: 1000px) {
@@ -166,7 +186,7 @@ form label {
     }
 }
 .argument-container-big {
-   width: 50%
+   width: 50%;
 }
 @media (max-width: 1000px) {
     .argument-container-big {
@@ -175,7 +195,9 @@ form label {
 }
 .argument-container-big i {
   color: #ce2b1d;
-  font-size: 28px;    
+  font-size: 28px;
+  position: absolute;
+  left:-30px;  
 }
 .argument-container-big b {
   font-weight: 900;    
@@ -187,7 +209,11 @@ form label {
   font-style: italic;
   margin: 2%;
 }
-
+@media (max-width: 1000px) {
+    .lorem-centered {
+    margin:10% 0;
+    }
+}
 /*GRAY STEPS BANNER*/
 
 .steps-container {
@@ -243,7 +269,6 @@ footer {
     color: #9f9f9f !important;
     font-weight: 900;
     font-size: 1.1em;
-    margin: 5%;
     line-height: 6em;
 }
 .copyright {
@@ -256,7 +281,11 @@ footer {
   display:table;
   clear:both;
   }
-
+.logo-container {
+    border-bottom: 2px solid #d1d1d1;
+    margin: 0 auto;
+    width:95%;
+}
 .centered-container {
   text-align: center;
 }
